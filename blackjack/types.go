@@ -1,19 +1,19 @@
 package blackjack
 
 
-type card string
+type Card string
 
-type Deck []carta
+type Deck []Card
 
-type hand struct {
-    name string
-    cards []card
-    score string
-    stand, isBust bool
+type Hand struct {
+    Name string
+    Cards []Card
+    Score string
+    Stand, Bust bool
 }
 
-type dealer hand
+type Dealer Hand
 
-type player struct {
-    hands []hand
+type Player struct {
+    hands []Hand
 }

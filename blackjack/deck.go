@@ -12,7 +12,7 @@ func NewDeck(numberDecks int) (deck Deck) {
     // Create deck
     for i := 0; i < len(seeds); i++ {
         for j := 0; j < len(values); j++ {
-            deck = append(deck, values[j]+seeds[i])
+            deck = append(deck, Card(values[j]+seeds[i]))
         }
     }
 
