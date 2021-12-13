@@ -12,8 +12,6 @@ type Hand struct {
     Stand, Bust bool
 }
 
-type Dealer Hand
-
 type Player struct {
-    hands []Hand
+    Hands []Hand
 }
